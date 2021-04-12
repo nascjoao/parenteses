@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #282A36;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 18px;
+  color: #F774BF;
+}
+
+#score, #fails {
+  color: #F4F0E6;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+main #challenge {
+  font-size: 88px;
+  margin: 35px;
+  color: #7FE3FC;
+  transform: scale(0);
+  transition: transform .4s;
+}
+
+#options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 35px;
+}
+
+button {
+  color: #44E97A;
+  background: #282A36;
+  font-weight: 700;
+  border: 2px solid #F774BF;
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+#game-over {
+  background: #282A36;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+#game-over strong {
+  font-size: 42px;
+  color: #44E97A;  
+}
+
+#game-over strong span {
+  color: #F4F0E6;
+}
+
+#score-gameover {
+  color: #F1F688;
+  margin: 20px 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 35px;
+  background: rgba(0, 0, 0, .1);
+  color: #F4F0E6;
+}
+
+footer img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+footer a {
+  color: #44E97A;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 14px;
+  }
+
+  footer img {
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  footer span {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    font-size: 12px;
+  }
+
+  footer span {
+    max-width: 190px;
+  }
+}

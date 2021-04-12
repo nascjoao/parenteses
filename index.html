@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <title>Nem tudo é parênteses</title>
+</head>
+<body>
+  <header>
+    <div>
+      Acertos:
+      <span id="score">0</span>
+    </div>
+    <div>
+      Erros:
+      <span id="fails">0</span>
+    </div>
+  </header>
+  <main>
+    <div id="challenge">()</div>
+    <section id="options">
+      <button>Parênteses</button>
+      <button>Colchetes</button>
+      <button>Chaves</button>
+    </section>
+  </main>
+
+  <div id="game-over" class="hidden">
+    <strong>gameOver<span>()</span></strong>
+    <p id="score-gameover">Pontuação final.</p>
+    <button id="restart">Recomeçar</button>
+  </div>
+
+  <footer>
+    <img src="https://github.com/nascjoao.png" alt="Foto de João Nasc">
+    <span>
+      Desenvolvido com muito 💚️ por <a href="https://github.com/nascjoao" target="_blank">João Nasc</a>
+    </span> 
+  </footer>
+  <script src="/scripts.js"></script>
+</body>
+</html>
